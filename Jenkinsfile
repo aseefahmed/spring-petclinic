@@ -6,7 +6,7 @@ pipeline {
 				git 'https://github.com/aseefahmed/spring-petclinic.git'
 			}
 		}
-		stage('Duild'){
+		stage('Build'){
 			steps{
 				sh 'mvn clean package'
 				junit '**/target/surefire-reports/TEST-*.xml'
