@@ -14,7 +14,9 @@ pipeline {
 			}
 		}
                 stage('Deploy'){
-                        input 'Do you want to proceed for deployment?'
+                        steps{
+                                input 'Do you want to proceed for deployment?'
+                        }
                 }
 	}
 }
